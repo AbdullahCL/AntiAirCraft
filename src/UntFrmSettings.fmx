@@ -1,0 +1,155 @@
+inherited FrameSettings: TFrameSettings
+  Align = Client
+  Size.Width = 411.000000000000000000
+  Size.Height = 387.000000000000000000
+  inherited Layout: TLayout
+    Align = Bottom
+    Position.Y = 326.000000000000000000
+    Size.Width = 411.000000000000000000
+    Size.Height = 61.000000000000000000
+    inherited BtnMainMenu: TButton
+      Position.Y = 10.000000000000000000
+    end
+    inherited BtnPlayGame: TButton
+      Visible = False
+    end
+  end
+  inherited LabelTitle: TLabel
+    StyledSettings = [Family]
+    Size.Width = 411.000000000000000000
+    Size.Height = 81.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    TextSettings.FontColor = claWhite
+    Text = 'Settings'
+  end
+  object GBArcade: TGroupBox [2]
+    Align = Client
+    StyledSettings = [Family, Size, Other]
+    Margins.Top = 15.000000000000000000
+    Size.Width = 411.000000000000000000
+    Size.Height = 90.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Arcade Mode'
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    TextSettings.FontColor = claWhite
+    TabOrder = 2
+    object RBEasy: TRadioButton
+      StyledSettings = [Family, Size, Style]
+      IsChecked = True
+      Position.X = 40.000000000000000000
+      Position.Y = 21.000000000000000000
+      TabOrder = 7
+      Text = 'Easy'
+      TextSettings.FontColor = claTurquoise
+    end
+    object RBMedium: TRadioButton
+      StyledSettings = [Family, Size, Style]
+      Position.X = 40.000000000000000000
+      Position.Y = 61.000000000000000000
+      TabOrder = 6
+      Text = 'Medium'
+      TextSettings.FontColor = claTurquoise
+    end
+    object RBHard: TRadioButton
+      StyledSettings = [Family, Size, Style]
+      Position.X = 168.000000000000000000
+      Position.Y = 21.000000000000000000
+      TabOrder = 5
+      Text = 'Hard'
+      TextSettings.FontColor = claTurquoise
+    end
+  end
+  object GBGeneral: TGroupBox [3]
+    Align = Top
+    StyledSettings = [Family, Size, Other]
+    Position.Y = 81.000000000000000000
+    Size.Width = 411.000000000000000000
+    Size.Height = 85.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'General'
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    TextSettings.FontColor = claWhite
+    TabOrder = 3
+    object LayoutMusic: TLayout
+      Padding.Left = 10.000000000000000000
+      Padding.Right = 10.000000000000000000
+      Position.Y = 17.000000000000000000
+      Size.Width = 411.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object Label1: TLabel
+        Align = Client
+        StyledSettings = [Family, Size, Style]
+        Padding.Left = 10.000000000000000000
+        Padding.Right = 10.000000000000000000
+        Size.Width = 341.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.FontColor = claTurquoise
+        Text = 'Music'
+        TabOrder = 0
+      end
+      object SwMusic: TSwitch
+        StyleName = 'STB'
+        Align = Right
+        IsChecked = True
+        Position.X = 351.000000000000000000
+        Size.Width = 50.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        OnClick = SwMusicClick
+      end
+    end
+    object LayoutScreen: TLayout
+      Padding.Left = 10.000000000000000000
+      Padding.Right = 10.000000000000000000
+      Margins.Top = 15.000000000000000000
+      Position.Y = 48.000000000000000000
+      Size.Width = 411.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object Label4: TLabel
+        Align = Client
+        StyledSettings = [Family, Size, Style]
+        Padding.Left = 10.000000000000000000
+        Size.Width = 341.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.FontColor = claTurquoise
+        Text = 'Full Screen'
+        TabOrder = 0
+      end
+      object SwScreen: TSwitch
+        Align = Right
+        IsChecked = True
+        Position.X = 351.000000000000000000
+        Size.Width = 50.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'switchstyle'
+        TabOrder = 1
+      end
+    end
+  end
+  object LayoutApply: TLayout [4]
+    Align = Bottom
+    Position.Y = 271.000000000000000000
+    Size.Width = 411.000000000000000000
+    Size.Height = 55.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    object BtnApply: TButton
+      Position.X = 40.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 329.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Apply'
+      OnClick = BtnApplyClick
+    end
+  end
+end
