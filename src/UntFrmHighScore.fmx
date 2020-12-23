@@ -1,0 +1,32 @@
+inherited FrameHighScore: TFrameHighScore
+  Size.Width = 411.000000000000000000
+  inherited Layout: TLayout
+    Align = Bottom
+    Position.Y = 272.000000000000000000
+    Size.Width = 411.000000000000000000
+    Size.Height = 116.000000000000000000
+    inherited BtnPlayGame: TButton
+      Visible = False
+    end
+  end
+  inherited LabelTitle: TLabel
+    StyledSettings = [Family]
+    Size.Width = 411.000000000000000000
+    Size.Height = 81.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    TextSettings.FontColor = claWhite
+    Text = 'High Score'
+  end
+  object MemoHighScore: TMemo [2]
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Align = Client
+    Enabled = False
+    Size.Width = 411.000000000000000000
+    Size.Height = 191.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Viewport.Width = 411.000000000000000000
+    Viewport.Height = 191.000000000000000000
+  end
+end
