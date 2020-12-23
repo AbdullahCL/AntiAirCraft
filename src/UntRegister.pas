@@ -8,8 +8,8 @@ procedure RegisterClasses;
 
 implementation
 
-uses UntFrmControl, UntFrmSplash, UntFrmAbout, UntFrmSettings, UntFrmHighScore, UntFrmGameOver,
-  UntFrmCongratulations;
+uses UntFrmControl, UntFrmSplash, UntFrmAbout, UntFrmSettings, UntFrmHighScore, 
+  UntFrmGameOver, UntFrmCongratulations;
 
 procedure RegisterClasses;
 begin
