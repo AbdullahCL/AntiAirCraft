@@ -1,0 +1,88 @@
+inherited FrameSplash: TFrameSplash
+  Align = Client
+  Size.Height = 387.000000000000000000
+  inherited Layout: TLayout
+    Align = Client
+    Size.Height = 266.000000000000000000
+    inherited BtnMainMenu: TButton
+      Position.X = 30.000000000000000000
+      Position.Y = 64.000000000000000000
+      Size.Width = 350.000000000000000000
+      Visible = False
+    end
+    inherited BtnPlayGame: TButton
+      Position.X = 30.000000000000000000
+      Position.Y = 24.000000000000000000
+      Size.Width = 350.000000000000000000
+    end
+    object Button1: TButton
+      Action = ActAbout
+      Enabled = True
+      ImageIndex = -1
+      Position.X = 30.000000000000000000
+      Position.Y = 71.000000000000000000
+      Size.Width = 350.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+    end
+    object Button2: TButton
+      Action = ActHighScore
+      Enabled = True
+      ImageIndex = -1
+      Position.X = 30.000000000000000000
+      Position.Y = 117.000000000000000000
+      Size.Width = 350.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+    end
+    object Button4: TButton
+      Action = ActSettings
+      Enabled = True
+      ImageIndex = -1
+      Position.X = 30.000000000000000000
+      Position.Y = 162.000000000000000000
+      Size.Width = 350.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 4
+    end
+    object Button5: TButton
+      Action = ActClose
+      Enabled = True
+      ImageIndex = -1
+      Position.X = 30.000000000000000000
+      Position.Y = 208.000000000000000000
+      Size.Width = 350.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 5
+    end
+  end
+  inherited LabelTitle: TLabel
+    StyledSettings = [Family]
+    Size.Height = 121.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    TextSettings.FontColor = claWhite
+    Text = 'Unti-Aircraft 1.0.0 Demo'
+  end
+  inherited ActListBaseFrame: TActionList
+    object ActAbout: TAction
+      Text = 'About'
+      OnExecute = ActAboutExecute
+    end
+    object ActHighScore: TAction
+      Text = 'High Score'
+      OnExecute = ActHighScoreExecute
+    end
+    object ActSettings: TAction
+      Text = 'Settings'
+      OnExecute = ActSettingsExecute
+    end
+    object ActClose: TAction
+      Text = 'Close'
+      OnExecute = ActCloseExecute
+    end
+  end
+end
