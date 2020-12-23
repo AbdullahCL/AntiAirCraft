@@ -1,0 +1,59 @@
+object BaseFrame: TBaseFrame
+  Align = Contents
+  Size.Width = 410.000000000000000000
+  Size.Height = 388.000000000000000000
+  Size.PlatformDefault = False
+  object Layout: TLayout
+    Align = Center
+    Size.Width = 410.000000000000000000
+    Size.Height = 126.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object BtnMainMenu: TButton
+      Action = ActMainMenu
+      Enabled = True
+      ImageIndex = -1
+      Position.X = 40.000000000000000000
+      Position.Y = 49.000000000000000000
+      Size.Width = 329.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+    end
+    object BtnPlayGame: TButton
+      Action = ActPlayGame
+      Enabled = True
+      ImageIndex = -1
+      Position.X = 40.000000000000000000
+      Position.Y = 4.000000000000000000
+      Size.Width = 329.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+    end
+  end
+  object LabelTitle: TLabel
+    Action = ActPlayGame
+    Align = Top
+    Enabled = True
+    StyledSettings = [Family, Style, FontColor]
+    Size.Width = 410.000000000000000000
+    Size.Height = 289.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 30.000000000000000000
+    TextSettings.HorzAlign = Center
+    TabOrder = 1
+  end
+  object ActListBaseFrame: TActionList
+    Left = 136
+    Top = 200
+    object ActPlayGame: TAction
+      Text = 'Play Game'
+      OnExecute = ActPlayGameExecute
+    end
+    object ActMainMenu: TAction
+      Text = 'Main Menu'
+      OnExecute = ActMainMenuExecute
+    end
+  end
+end

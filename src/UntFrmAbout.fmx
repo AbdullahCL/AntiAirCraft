@@ -1,0 +1,43 @@
+inherited FrameAbout: TFrameAbout
+  Size.Width = 391.000000000000000000
+  inherited Layout: TLayout
+    Align = Bottom
+    Position.Y = 262.000000000000000000
+    Size.Width = 391.000000000000000000
+    inherited BtnPlayGame: TButton
+      Visible = False
+    end
+  end
+  inherited LabelTitle: TLabel
+    StyledSettings = [Family]
+    Size.Width = 391.000000000000000000
+    Size.Height = 73.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    TextSettings.FontColor = claWhite
+    Text = 'About'
+  end
+  object MemoAbout: TMemo [2]
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Lines.Strings = (
+      'Anti-AirCraft 1.0.0 Demo'
+      ''
+      'Copyright By Abdullah '#199#304'L '
+      ''
+      'Embarcadero Delphi 10.3 Berlin '
+      ''
+      'FireMonkey')
+    StyledSettings = [Family, FontColor]
+    TextSettings.Font.Size = 11.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    TextSettings.HorzAlign = Center
+    Align = Client
+    Enabled = False
+    Size.Width = 391.000000000000000000
+    Size.Height = 189.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Viewport.Width = 391.000000000000000000
+    Viewport.Height = 189.000000000000000000
+  end
+end

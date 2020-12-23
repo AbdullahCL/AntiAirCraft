@@ -1,0 +1,19 @@
+inherited FrameCongratulations: TFrameCongratulations
+  inherited LabelTitle: TLabel
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    Text = 'Congratulations'
+  end
+  inherited LabelScore: TLabel
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+  end
+  inherited FrameUserScore1: TFrameUserScore
+    inherited Rectangle1: TRectangle
+      inherited ButtonOK: TButton
+        Action = ActSaveScrore
+      end
+      inherited Label1: TLabel
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+    end
+  end
+end
