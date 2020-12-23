@@ -42,5 +42,4 @@ function TBaseForm.ExecuteVar(FrameName: string): Boolean;
 begin
   Result := True;
 end;
-
 end.
