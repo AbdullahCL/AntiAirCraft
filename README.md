@@ -1,4 +1,4 @@
-# AntiAirCraft
+# AntiAirCraft Demo 1.0.0.0
 
 AntiAirCraft Game with Delphi
 
@@ -9,5 +9,8 @@ mp3 dosyalarını exe'nin bulunduğu yere atamalısınız...
 Firemonkey proje olarak tasarlanmıştır...
 
 Testleri henüz tamamlanmamıştır...
+
+Demo bir projedir, tam sürüm olmadığı için referans kabul edilemez...
+
 
 
